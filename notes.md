@@ -28,9 +28,12 @@ The alt attribute is used for 3 main reasons:
 ![LCP](image-1.png)
 
 # JavaSCRIPT
-
-
-
+The datatypes in this are:
+- number
+- boolean
+- object
+- string
+## To declare a variable we use let, var, and const keywords
 
 
 
