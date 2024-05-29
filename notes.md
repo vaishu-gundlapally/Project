@@ -27,6 +27,9 @@ The alt attribute is used for 3 main reasons:
 - SEO -->Search Engine Optimization
 ![LCP](image-1.png)
 
+# JavaSCRIPT
+
+
 
 
 
@@ -40,5 +43,6 @@ The alt attribute is used for 3 main reasons:
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses
 - https://caniuse.com/
 - https://squoosh.app/
+- https://pythontutor.com/
 
 
