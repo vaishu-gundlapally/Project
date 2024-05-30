@@ -105,6 +105,20 @@ We write for fellow teammate and for ourself. Basically to understand what other
 4. Testability 
 5. Performance
 
+### copy by value 
+- We use the spread opertor "..."
+- if we not use it becomes nested arrays and it is difficult to see these nested arrays.
+- we can add the values before or after or between the operator
+- this operator Merges 2 arrays
+
+## For loops:
+1. for loop --> we can have more control like for auto increment i+1 or i+2
+2. for in ---> code is readable and simple | in->index
+3. for of ---> Readable and cleaner
+
+
+
+
 
 # References
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses
