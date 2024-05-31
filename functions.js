@@ -5,3 +5,4 @@ console.log(double(10));
 const double1 = (n) => {
     return n*4;
 }
+
