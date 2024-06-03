@@ -10,6 +10,10 @@ The war is between Netscape and IE
    - python
    -java
    -nodes
+   ### why 3 layer?
+   - loosely coupled - fleaxibility working with diff backend or fronends
+   - performance agnostic - 
+   - micro service architecture
 ## selectors
 
 -element selector
@@ -46,7 +50,7 @@ Variables declared with the var keyword can NOT have block scope. It is because 
 undefined is the value.
 not defined is the error.
 
-var x1=3;
+```js var x1=3;
 var x2="5";
 var t=x1-x2;
 var t1=x1+x2;
@@ -54,13 +58,16 @@ console.log(x1-x2);
 console.log(x1+x2);
 console.log(typeof(t));
 console.log(typeof(t1));
+```
   - the "+" operator has two jobs to do: addition and concat, it gives priority to concat and converts number 3 to string "3" and concat with string "5"
   - the "-" operator has only 1 job i.e subtraction so it converts to number and subtract
   - this is implicit typecasting
-        var x1=3;
+  
+        ```js var x1=3;
         var x2="5";
         console.log(x1+parseInt(x2)); --->explicit 
         console.log(x1+ +x2);
+        ```
 - to make addition we can convert to number 
 ### operations 
 - null+4 will give u number --> 4
@@ -116,10 +123,70 @@ We write for fellow teammate and for ourself. Basically to understand what other
 2. for in ---> code is readable and simple | in->index
 3. for of ---> Readable and cleaner
 
+### object methods:
+There are 2 methods
+Object.keys() -->  to retreive only the keys
+Object.values() --> to retrieve the values only
+
+##### Refactoring:
+quality better and functionality same
+### Array destructuring:
+- unpacking the values of array.
+const [t1,t2,t3=80]=[100,200];
+here t3=80 is the default value, 
+- When there is no value on the right side, it takes the default value otherwise it takes the value on right side.
+### object destructuring:
+unpacking is done with keys.
+
+### ES6 Features:
+- Numeric seperator --> example :1_00_00_000, the interpreter ignores the underscores, basically for developer experience.
+- Ternary operator: 3 operands - ternary operator
+example- 5>4?"hey":"cool"
+
+- Binary operatorrs:
+Arithmetic +, -, /, *
+logical &&, ||
+Realtional >, <, <=, >=, ==,===
+
+Unary operators: single
++, ++, --, !
+## Truthy vs Falsy
+```js let x="cool";
+if(x){
+  console.log("hey");
+}
+else{
+  console.log("nope");
+}
+```
+- if the value cohers into true its truthy --> this is implict cohersion
+
+
+### Rest operator:
+Collects the values
+Example:
+```js
+var [t1,t2,t3]=[10,20,30,40,50,60]
+var [t1,t2,...t3]=[10,20,30,40,50,60]
+```
+to collect 40 to 60 values we ca use rest operator in left hand side.
+ ### Methods:
+ 1. upper case -->toUpperCase()
+ 2. lower case -->toLowerCase()
+ 3. split(" ")
+ 4. join("|")
+ 5. push
+ 6. slice
+ ![methods](<Screenshot 2024-05-31 145125.png>) 
 
 
 
 
+# shortcuts:
+- 'ctrl' + 'space' --> Autocomplete
+- 'ctrl' + '/' -->comment
+- 'win' + '.' --> emojis
+- 'ctrl' + 'shift' + p --> to get all the shortcuts
 # References
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#information_responses
 - https://caniuse.com/
