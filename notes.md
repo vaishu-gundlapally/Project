@@ -199,6 +199,19 @@ They initialize the blueprint of the project like what should be the frontend, b
 ### waterfall model vs agile:
 ![model](image-3.png)
 
+scrum -implemetation of agile
+### sprint: 
+- it is of 2 weeks
+### sprint planning: 
+- what are the tasks to be done.
+- assign the backlogs to the persons. we also have story points.
+- based on the priority - p0,p1,p2,p3.. the scrum master or manager assigns this and work should be done.
+### standup calls:
+- what tasks they have done. if there is any blocks present the manager helps us.
+### sprint retrospective:
+- what needs to be improved is discussed.
+### sprint review:
+- reviewer checks the code quality, documentation.
 #### burn down chart:
 The progress of the entire sprint team is progressed in the chart. 
 
@@ -229,7 +242,7 @@ const PI_VALUE=3.14;
 # Documentation
 - single line comment
 ```js
-//
+// single line
 ```
 - multiple comment
 ```js
@@ -237,9 +250,8 @@ const PI_VALUE=3.14;
  * multi
  * line
  * comment
- */
-
-
+ **/
+``` 
 
 # shortcuts:
 - 'ctrl' + 'space' --> Autocomplete
