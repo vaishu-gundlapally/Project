@@ -6,49 +6,51 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="spread.js">
-         {
-          var t1=10;
-          let t2=50;
-          console.log(t1);
-
-         }
+    <script>
+      {
+        var t1 = 10;
+        let t2 = 50;
+        console.log(t1);
+      }
       //    console.log(t2);
-          function fun(age){
-              if (age>18){
-                  var msg= "eligible";
-              }
-              else{
-                  let msg="not";
-              }
-              console.log("u are "+msg);
-          }
-          fun(20);
-          // Here the console is outside the block so the variable is undefined
-          //solutions:
-          // 1. if the console is moved to if block then it will work
-          // 2. declare the msg as var to make it work
-          // 3. declare the msg variable at top of function to access inside the functional block.
-          var x1=3;
-          var x2="5";
-          var t=x1-x2;
-          var t1=x1+x2;
-          console.log(x1-x2);
-          console.log(x1+x2);
-          console.log(typeof(t));
-          console.log(typeof(t1));
-          //the "+" operator has two jobs to do: addition and concat, it gives priority to concat and converts number 3 to string "3" and concat with string "5"
-          // the "-" operator has only 1 job i.e subtraction so it converts to number and subtract
-          // this is implicit typecasting
-          var x1=3;
-          var x2="5";
-          console.log(x1+parseInt(x2));
-          console.log(x1+ +x2);
+      function fun(age) {
+        if (age > 18) {
+          var msg = "eligible";
+        } else {
+          let msg = "not";
+        }
+        console.log("u are " + msg);
+      }
+      fun(20);
+      // Here the console is outside the block so the variable is undefined
+      //solutions:
+      // 1. if the console is moved to if block then it will work
+      // 2. declare the msg as var to make it work
+      // 3. declare the msg variable at top of function to access inside the functional block.
+      var x1 = 3;
+      var x2 = "5";
+      var t = x1 - x2;
+      var t1 = x1 + x2;
+      console.log(x1 - x2);
+      console.log(x1 + x2);
+      console.log(typeof t);
+      console.log(typeof t1);
+      //the "+" operator has two jobs to do: addition and concat, it gives priority to concat and converts number 3 to string "3" and concat with string "5"
+      // the "-" operator has only 1 job i.e subtraction so it converts to number and subtract
+      // this is implicit typecasting
+      var x1 = 3;
+      var x2 = "5";
+      console.log(x1 + parseInt(x2));
+      console.log(x1 + +x2);
 
-          // to make addition we can convert to number
-          var g1=5;
-          var g2="5";
-          console.log(g1==g2);
+      // to make addition we can convert to number
+      var g1 = 5;
+      var g2 = "5";
+      console.log(g1 == g2);
     </script>
+    <script src="es6.js"></script>
+    <script src="spread.js"></script>
+    <script src="functions.js"></script>
+    <script src="awesome.js"></script>
   </body>
 </html>

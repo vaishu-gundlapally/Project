@@ -161,7 +161,6 @@ else{
 ```
 - if the value cohers into true its truthy --> this is implict cohersion
 
-
 ### Rest operator:
 Collects the values
 Example:
@@ -179,6 +178,66 @@ to collect 40 to 60 values we ca use rest operator in left hand side.
  6. slice
  ![methods](<Screenshot 2024-05-31 145125.png>) 
 
+# SDLC:
+1. planning
+2. analysis --> think if that is technically possible
+3. Design
+changing something in the coding takes more time but when we have visual understanding we can do it easier.
+### why we need visualization?
+- it's lot easier to explain by seeing, people can give comments to improvise. client, manager everyone can have an idea of what we are developing.
+
+- Auto layout
+- variants
+4. Implementation
+5. Testing & integration
+6. Maintenance 
+### Stakeholders:
+- responsible,they get pulled if anything wrong goes in the product. They have the authority in changing the product. 
+### system architect: present in design
+They initialize the blueprint of the project like what should be the frontend, backend and database. They basically setup the foundation.
+
+### waterfall model vs agile:
+![model](image-3.png)
+
+#### burn down chart:
+The progress of the entire sprint team is progressed in the chart. 
+
+# Coding Standards:
+are meant to have uniformity through out your code base.
+## code quality
+## Dry
+### Errors( for variable names)
+Reserved keywords ('if','for' etc)
+## variable name
+- understandable / Descriptive
+```js
+let a =50; // wrong❌
+let age=50;// correct
+```
+- cameCase
+```js
+let student_name="vaish";
+let studentName="vaish"; //correct
+```
+- choose 'let' over 'var', 'const' over 'let'
+![var,let,const](<Screenshot 2024-06-03 173615.png>)
+- write your const case
+```js
+const piValue=3.14;
+const PI_VALUE=3.14;
+```
+# Documentation
+- single line comment
+```js
+//
+```
+- multiple comment
+```js
+/**
+ * multi
+ * line
+ * comment
+ */
 
 
 
