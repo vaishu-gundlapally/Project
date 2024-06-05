@@ -34,12 +34,14 @@ const newItems = [
 //combine carts
 var c = [...cart, ...newItems];
 console.log(c);
-console.log(c[0]);
+// console.log(c[0]);
 let a = 0;
-for (let item of c) {
-  a += item.price * item.quantity;
+for (let { price, quantity } of c) {
+  // for(let item of c){ a+=item.price*item.quantity} here item. is repeated so it can be destructured.
+  a += price * quantity;
 }
 console.log(a);
+
 // Ex 2: Rating 4.7 and above | Recommendations List
 const books = [
   { title: "Infinite Jest", rating: 4.5, genre: "Fiction" },
@@ -90,7 +92,7 @@ const movies = [
 // Expected Output:  The Dark Knight
 
 // console.log(ad);
-let arr=[];
+let arr = [];
 for (let i of movies) {
   // console.log(i.ratings)
   let avg = 0;
@@ -101,11 +103,51 @@ for (let i of movies) {
   arr.push(avg);
 }
 console.log(arr);
-let m=Math.max(...arr);
+let m = Math.max(...arr);
 console.log(m);
 
-for(let i in arr){
-  if(arr[i]==m){
+for (let i in arr) {
+  if (arr[i] == m) {
     console.log(movies[i].title);
   }
 }
+// console.log("Hello")
+//Task-6
+function transformSentence(sentence) {
+  return sentence.split(" ").reverse().join(" ").toUpperCase();
+}
+let sentence = "Hello world from JavaScript";
+let transformed = transformSentence(sentence);
+console.log(transformed);
+// Output: "JAVASCRIPT FROM WORLD HELLO"
+
+// Task 7: Improving code quality
+function processNames(names) {
+  let result = [];
+  for (let i of names) {
+    let upperCaseName = names[i].toUpperCase();
+    let nameParts = upperCaseName.split(" ");
+    let joinedName = nameParts.join("_");
+    result.push(joinedName);
+  }
+  return result;
+}
+function processNames1(names) {
+  let result = [];
+  for (let i of names) {
+    result.push(i.toUpperCase().split(" ").join("_"));
+  }
+  return result;
+}
+const namesArray1 = ["john doe", "jane smith", "alice jones"];
+console.log(processNames1(namesArray1));
+
+function processNames2(names) {
+  // let result = [];
+  // for (let i of names) {
+  return names.map((i) => i.toUpperCase().split(" ").join("_"));
+
+  // return result;
+}
+const namesArray = ["john doe", "jane smith", "alice jones"];
+console.log(processNames2(namesArray));

@@ -176,7 +176,7 @@ to collect 40 to 60 values we ca use rest operator in left hand side.
  4. join("|")
  5. push
  6. slice
- ![methods](<Screenshot 2024-05-31 145125.png>) 
+ ![methods](<methods.png>) 
 
 # SDLC:
 1. planning
@@ -240,18 +240,25 @@ const piValue=3.14;
 const PI_VALUE=3.14;
 ```
 # Documentation
-- single line comment
+##### single line comment
 ```js
 // single line
 ```
-- multiple comment
+##### multiple comment
+useful for
+- JSDOC
+- Autocomplete
+- to know the parameters
 ```js
 /**
  * multi
  * line
  * comment
  **/
-``` 
+```
+## ESLint
+
+
 
 # shortcuts:
 - 'ctrl' + 'space' --> Autocomplete
